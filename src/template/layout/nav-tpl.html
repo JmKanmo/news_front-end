@@ -1,0 +1,144 @@
+<div class="navbar-wrapper">
+	<div class="navbar-header">
+		<ul class="nav navbar-nav flex-row">
+			<li class="nav-item mobile-menu d-md-none mr-auto">
+				<a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
+					<i class="ft-menu font-large-1"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="navbar-brand" href="/">
+					<img class="brand-logo" alt="modern admin logo" src="./src/assets/img/logo/mmlogo.png?version=202301111917">
+					<h3 class="brand-text"><b>Mound&nbsp;</b>Media</h3>
+				</a>
+			</li>
+			<li class="nav-item d-md-none">
+				<a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a>
+			</li>
+		</ul>
+	</div>
+
+  <div class="navbar-container content">
+    <div class="collapse navbar-collapse" id="navbar-mobile">
+      <ul class="nav navbar-nav mr-auto float-left">
+				<!-- 좌측 메뉴 크기 변경 버튼[시작] -->
+				<li class="nav-item d-none d-md-block">
+					<a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a>
+				</li>
+				<!-- 좌측 메뉴 크기 변경 버튼[끝] -->
+				
+				<!-- 전체화면 버튼 [시작] -->
+				<!--
+				<li class="nav-item d-none d-lg-block">
+					<a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a>
+				</li>
+				-->
+				<!-- 전체화면 버튼 [끝] -->
+      </ul>
+      <ul class="nav navbar-nav float-right">
+				<!-- 우측 사용자 프로필 메뉴[시작] -->
+				<li>					
+					<span id="currentMyBrand">
+						<span>Brand |</span>
+						<span>
+							<div></div>
+							<div>
+								<select id="brandSelect"></select>
+							</div>
+							<div></div>
+						</span>
+					</span>
+				</li>
+				<li class="dropdown dropdown-user nav-item">
+					<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+						<!-- <span id="principalName" class="mr-1 user-name text-bold-700"></span> -->
+						<span class="avatar avatar-online">
+							<img src="">
+							<!-- <i></i> -->
+						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#userInfo"><span id="principalName" class="mr-1 user-name text-bold-700"></span></a>
+						<!-- <div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#user-profile">
+							<i class="ft-user"></i> Edit Profile
+						</a>
+						<a class="dropdown-item" href="#app-email"><i class="ft-mail"></i> My Inbox</a>
+						<a class="dropdown-item" href="#user-cards"><i class="ft-check-square"></i> Task</a>
+						<a class="dropdown-item" href="#app-chat"><i class="ft-message-square"></i> Chats</a> -->
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#logout"><i class="ft-power"></i> Logout</a>
+					</div>
+				</li>
+				<!-- 우측 사용자 프로필 메뉴[끝] -->
+      </ul>
+    </div>
+  </div>
+</div><!-- 사용자 정보 관리 템플릿 -->
+<script id="userInfoPopupList" type="text/x-handlebars-template">
+    <swal-param name="allowEscapeKey" value="false"></swal-param>
+    <swal-param name="allowEscapeKey" value="false"></swal-param>
+    <swal-param name="showConfirmButton" value="false"></swal-param>
+    <swal-param name="allowOutsideClick" value="false"></swal-param>
+    <swal-param name="showCloseButton" value="true"></swal-param>
+    <swal-param name="width" value="1000px"></swal-param>
+    <swal-html>
+        <style>
+            .swal2-popup {
+                position: relative;
+            }
+
+            .swal2-actions {
+                position: absolute;
+                right: 3%;
+            }
+
+            .popupTableHeader {
+                position: sticky;
+                top: 0;
+            }
+
+            #userInfoBox #popupBody {
+                max-height: 500px;
+                overflow-y: auto;
+            }
+
+            .popup_number_style {
+                min-width: 100px;
+                max-width: 200px;
+            }
+
+            .popup_update_time_style {
+                min-width: 150px;
+                max-width: 250px;
+            }
+
+            .popup_update_item_style {
+                min-width: 200px;
+                max-width: 300px;
+            }
+
+            .popup_item_style {
+                min-width: 400px;
+                max-width: 1500px;
+            }
+
+            .popup_admin_style {
+                min-width: 150px;
+                max-width: 250px;
+            }
+
+            .overflow_scrollY {
+                max-height: 300px !important;
+                overflow-y: auto !important;
+            }
+        </style>
+
+        <div id="userInfoBox">
+            <div id="popupBody">
+                <strong>hello world</strong>
+            </div>
+        </div>
+    </swal-html>
+</script>
+<!-- 사용자 정보 관리 템플릿 -->

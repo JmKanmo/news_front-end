@@ -1,0 +1,279 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+@import url(//fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(./custom-font.css);
+@import url(./custom-colors.css);
+
+.navigation,
+.header-navbar {
+    font-family: 'Nanum Gothic';
+}
+
+.navbar-wrapper .brand-text {
+    font-family: 'Manrope' !important;
+    color: #404040 !important;
+    font-weight: normal !important;
+    font-size: 24px;
+}
+
+input[data-event=click],
+span[data-event=click],
+div[data-event=click] {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.common_table_button_image {
+    cursor: pointer;
+    position: relative;
+    left: 93%;
+    top: -23px;
+    background: #ffffff;
+    padding: 0;
+    border: none;
+}
+
+/*Sweet Modal*/
+.swal2-modal,
+.swal2-title,
+.swal2-text {
+    font-family: 'Nanum Gothic';
+}
+
+.swal2-html-container #popup {
+    margin: 1rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#popupTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+#popupTable th,
+#popupTable td {
+    font-size: 1rem;
+    vertical-align: inherit !important;
+}
+
+input#trackListCount[data-model=TargetAsset]:not([value="전체"]) {
+    color: #cc0029;
+    font-weight: bold;
+}
+
+thead, tfoot {
+    display: table-header-group;
+
+}
+
+thead tr:first-child {
+    background: #404040;
+    color: #ffffff;
+}
+
+tfoot tr:first-child {
+    background: #dddddd;
+    color: #404040;
+}
+
+div[data-repeater-list] > div.shared-Assets-Rate:first-child input {
+    /* pointer-events: none; */
+    background-color: #ECEFF1;
+}
+
+div[data-repeater-list] > div.shared-Assets-Rate:first-child span[data-repeater-delete] {
+    display: none;
+}
+
+div[data-repeater-list] > div.shared-Assets-Rate:first-child input::placeholder,
+div[data-repeater-list] > div.shared-Records-Rat:first-child input::placeholder {
+    color: #ECEFF1;
+}
+
+div#AssetItemList .toggle {
+    border-radius: 20px;
+}
+
+div#AssetItemList .toggle-handle {
+    border-radius: 20px;
+}
+
+#settCalc span:nth-child(2) {
+    float: right;
+}
+
+a.fakeInputForDownload {
+    box-sizing: border-box;
+    text-align: center;
+
+    margin: 0;
+    height: 2rem;
+    font-size: 0.975rem;
+    line-height: 2px;
+    min-width: 50px;
+    padding-left: 5px;
+    padding: 0.95rem 0.95rem;
+
+    background-color: #ECEFF1;
+}
+
+a.fakeInputForDownload:hover {
+    color: initial;
+}
+
+table tbody td a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+div#settleInfo ul li a > div {
+    pointer-events: none;
+}
+
+table#tableContents th,
+table#tableContents td {
+    padding: 8px 0;
+}
+
+table#tableContents thead tr:first-child th {
+    padding: 20px 0;
+}
+
+table#tableContents thead tr:first-child th:first-child.sorting_asc:before,
+table#tableContents thead tr:first-child th:first-child.sorting_desc:before,
+table#tableContents thead tr:first-child th:first-child.sorting_asc:after,
+table#tableContents thead tr:first-child th:first-child.sorting_desc:after {
+    content: '';
+}
+
+div.navbar-container ul.float-right li:first-child {
+    margin-right: 1rem;
+    /* display: none; */
+}
+
+li:first-child span#currentMyBrand {
+    opacity: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li:first-child span#currentMyBrand span {
+    height: 100%;
+    color: #f3f3f3;
+    font-size: 1rem;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+li:first-child span#currentMyBrand span:first-child {
+    pointer-events: none;
+}
+
+li:first-child span#currentMyBrand select {
+    font-weight: bolder;
+    padding-right: 0.5rem;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    height: 100%;
+    width: 135px;
+    background: #000 !important;
+    border: 0;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 1px;
+}
+
+li:first-child span#currentMyBrand span div {
+    height: 20%;
+}
+
+li:first-child span#currentMyBrand span div:nth-child(2) {
+    height: 60%;
+}
+
+span#currentMyBrand select option:checked {
+    display: none;
+}
+
+span#currentMyBrand select option {
+    color: #f5f5f5;
+    background: #000;
+    font-size: 1.2rem;
+}
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link {
+    padding: 0 !important;
+}
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link .avatar {
+    width: 50px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-logo {
+    width: 53px;
+    margin-left: -8px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-text {
+    vertical-align: text-top;
+    font-size: 1.9rem;
+}
+
+select#brandSelect:disabled {
+    opacity: 1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox  */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+
+table.feeRateTable {
+    border: 1px solid black;
+}
+
+table.feeRateTable th,
+table.feeRateTable td {
+    border: 1px solid black;
+}
+
+.swal2-html-container {
+    /* max-height: 500px; */
+    overflow: scroll;
+}

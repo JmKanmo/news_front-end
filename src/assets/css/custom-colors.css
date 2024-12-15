@@ -1,0 +1,47 @@
+.text-raspberry {
+    color: #E91E63;
+}
+
+.bg-raspberry {
+    background-color: #E91E63;
+}
+
+.text-deepPink {
+    color: #FF1493;
+}
+
+.bg-deepPink {
+    background-color: #FF1493;
+}
+
+.btn-deepPink {
+    color: #fff;
+    background-color: #FF1493;
+}
+
+.btn-lightGreen {
+    color: #fff;
+    background-color: #8BC34A;
+}
+
+.btn-Gray {
+    color: #fff;
+    background-color: #6b6f82;
+}
+
+.btn-Black {
+    color: #fff;
+    background-color: #000000;
+}
+
+.btn-deepPurple {
+    border-color: #3A44E1;
+    background-color: #666EE8;
+    color: #FFFFFF;
+}
+
+.btn-deepOrange {
+    border-color: #fd6400;
+    background-color: #ff7216;
+    color: #FFFFFF;
+}

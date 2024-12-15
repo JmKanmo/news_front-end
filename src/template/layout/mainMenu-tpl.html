@@ -1,0 +1,160 @@
+<div class="main-menu-content">
+	<!-- https://themewagon.github.io/Ready-Bootstrap-Dashboard/icons.html? -->
+	<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+		<!-- 권리자 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#rightsHolder/list">
+				<i class="la la-user-plus"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">권리자 관리</span>
+			</a>
+		</li>
+		<!-- 권리자 관리 메뉴 영역[끝]-->
+
+		<!-- 카탈로그 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#">
+				<i class="la la-pencil-square-o"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">카탈로그 관리</span>
+			</a>
+
+			<ul class="menu-content">
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#catalogDigital/list"><i></i>
+						<span data-i18n="nav.dash.ecommerce">DIGITAL</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#catalogPhysical/list"><i></i>
+						<span data-i18n="nav.dash.crypto">PHYSICAL</span>
+					</a>
+				</li>
+			<!--
+				TODO: 해당 페이지 기능 개발 시에, 활성화 하도록 - 2024/06/26
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#"><i></i>
+						<span data-i18n="nav.dash.crypto">뮤직비디오</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#"><i></i>
+						<span data-i18n="nav.dash.crypto">저작물(영상,기타)</span>
+					</a>
+				</li>
+				-->
+			</ul>
+		</li>
+		<!-- 카탈로그 관리 메뉴 영역[끝]-->
+
+		<!-- 계약 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#">
+				<i class="la la-pencil-square-o"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">계약관리</span>
+			</a>
+			<ul class="menu-content">
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#contractRecoupment/list"><i></i>
+						<span data-i18n="nav.dash.ecommerce">선급 계약</span>
+					</a>
+				</li>
+				<!-- 해당 계약 기능 폐기
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#contractDsp/list"><i></i>
+						<span data-i18n="nav.dash.crypto">DSP 계약</span>
+					</a>
+				</li>
+				-->
+			</ul>
+		</li>
+		<!-- 계약 관리 메뉴 영역[끝]-->
+
+		<!-- 수익분배 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#">
+				<i class="la la-balance-scale"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">수익분배 관리</span>
+			</a>
+
+			<ul class="menu-content">
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#sharedAsset/list"><i></i>
+						<span data-i18n="nav.dash.ecommerce">DIGITAL</span>
+					</a>
+				</li>
+			<!--
+				TODO: 권리지분 개발이 됨에 따라, 해당 수익 분배 기능은 DIGITAL 만 남겨 놓도록 한다. 추후에, 불가피하게 요청이 생기면 활성화 하도록  - 2024/06/26
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#sharedRecord/list"><i></i>
+						<span data-i18n="nav.dash.crypto">PHYSICAL</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#"><i></i>
+						<span data-i18n="nav.dash.crypto">뮤직비디오</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#"><i></i>
+						<span data-i18n="nav.dash.crypto">저작물(영상,기타)</span>
+					</a>
+				</li>
+				-->
+			</ul>
+		</li>
+		<!-- 수익분배 관리 메뉴 영역[끝]-->
+
+		<!-- 정산 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#">
+				<i class="la la-calculator"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">정산 관리</span>
+			</a>
+			<ul class="menu-content">
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#salesFile/list"><i></i>
+						<span data-i18n="nav.dash.ecommerce">정산자료 등록</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#salesCalc/list"><i></i>
+						<span data-i18n="nav.dash.crypto">분배 처리</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#salesMatch/view"><i></i>
+						<span data-i18n="nav.dash.crypto">이월/마감/조정 처리</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#salesReport/view"><i></i>
+						<span data-i18n="nav.dash.crypto">정산 레포트</span>
+					</a>
+				</li>
+				<li>
+					<a class="menu-item" data-menu="submenu" href="#salesDetail/list"><i></i>
+						<span data-i18n="nav.dash.crypto">분배 내역</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<!-- 정산 관리 메뉴 영역[끝]-->
+
+		<!-- 공지사항 관리 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="#notice/list">
+				<i class="la la-pencil-square-o"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">공지사항 관리</span>
+			</a>
+		</li>
+		<!-- 공지사항 관리 메뉴 영역[끝]-->
+
+		<!-- 정산서 발행 메뉴 영역[시작]-->
+		<li class="nav-item">
+			<a href="http://sett-util.moundmedia.co.kr:9000/" target="_blank">
+				<i class="ft ft-file-text"></i>
+				<span class="menu-title" data-i18n="nav.dash.main">정산서 발행</span>
+			</a>
+		</li>
+		<!-- 정산서 발행 메뉴 영역[끝]-->
+	</ul>
+</div>
